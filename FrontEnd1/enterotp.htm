@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coders House</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <style>
         body {
             background-color: black;
@@ -30,11 +30,11 @@
             padding: 30px 70px;
             border-radius: 10px;
         }
-
-        span{
+        
+        span {
             margin-right: 10px;
         }
-
+        
         img {
             width: 30px;
             height: 28px;
@@ -43,9 +43,32 @@
         button {
             margin-top: 30px;
             border-radius: 10px;
-            padding: 3px 5px;
+            padding: 5px 40px;
             color: white;
             background-color: blue;
+        }
+        /* i {
+            color: orange;
+        } */
+        
+        input {
+            width: 30px;
+            height: 50px;
+            background-color: rgb(128, 127, 127);
+            border-radius: 10px;
+            line-height: 30px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            color: grey;
+            margin: 5px 5px;
+        }
+        
+        .splitter {
+            padding: 0 5px;
+            color: white;
+            font-size: 24px;
         }
     </style>
 </head>
@@ -54,13 +77,19 @@
 
     <h2><img src="../hello.png">CodersHouse</h2>
     <card id="card">
-        <h3><span><i class="fas fa-lock"></i></span>Enter The code we just texted you</h3>
-        <form action="">
-            <input type="text">
+        <h3><span><i class="fas fa-lock"></i></span>Enter the code we just texted you</h3>
+        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+            <span class="splitter">&ndash;</span>
+            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+
         </form>
+
         <a href="#">Didn't receive? Tap to resend </a>
         <button onclick="window.location.href='entermail.htm'">Next -></button>
-        
+
     </card>
 </body>
 
