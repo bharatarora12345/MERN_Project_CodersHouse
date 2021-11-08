@@ -17,12 +17,12 @@
             margin-left: 20px;
             color: white;
         }
-
-        img{
+        
+        .profile {
             border-radius: 50%;
             align-items: center;
-            border : 2px solid blue;
-            
+            border: 2px solid blue;
+            font-size: x-large;
         }
         
         #card {
@@ -60,25 +60,30 @@
             font-size: 12px;
         }
     </style>
+    <script>
+        function show() {
+            document.getElementById("write").innerHTML = person;
+        }
+    </script>
 </head>
 
 <body>
 
     <h2><img src="../hello.png">CodersHouse</h2>
     <card id="card">
-        <h3><span><i class="far fa-user"></i></span>Okay,Garvit Gupta!</h3>
+        <h3><span><i class="far fa-user"></i></span>Okay,<span class="write"> Garvit Gupta!</span></h3>
         <p>
             How's this photo?
         </p>
-        <img src="../profile.png" alt="">
+        <img class="profile" src="../profile.png" alt="">
         <p>
             <a href="#">Choose a different photo </a>
         </p>
         <div>
-            <button onclick="window.location.href='entermail.htm'">Next -></button>
-       
+            <button onclick="window.location.href='pickusername.htm'">Next -></button>
+
         </div>
-        
+
     </card>
 </body>
 

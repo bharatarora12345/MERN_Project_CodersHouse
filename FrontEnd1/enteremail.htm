@@ -33,6 +33,9 @@
         
         span {
             margin-right: 10px;
+            background-color: aliceblue;
+            padding: 4px;
+            border-radius: 10px;
         }
         
         img {
@@ -52,6 +55,22 @@
             color: grey;
             font-size: 12px;
         }
+        
+        i {
+            color: black;
+            font-size: large;
+        }
+        
+        div button {
+            background-color: aliceblue;
+            padding: 5px 15px;
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+        
+        div button:hover {
+            background-color: blue;
+        }
     </style>
 </head>
 
@@ -59,11 +78,15 @@
 
     <h2><img src="../hello.png">CodersHouse</h2>
     <card id="card">
-        <h3><span><i class="far fa-envelope"></i></span>Enter your email id</h3>
+        <div>
+            <button onclick="window.location.href='enternumber.htm'"><i class="fa fa-mobile" aria-hidden="true"></i></button>
+            <button onclick="window.location.href='enteremail.htm'"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+        </div>
+        <h3><span><i class="fa fa-envelope"></i></span>Enter your email id</h3>
         <form action="">
             <input type="email">
         </form>
-        <button onclick="window.location.href='entermail.htm'">Next -></button>
+        <button onclick="window.location.href='enterotp.htm'">Next -></button>
         <p>
             By entering your number, you're agreeing to our Terms of Service an Privacy Policy. Thanks!
         </p>
