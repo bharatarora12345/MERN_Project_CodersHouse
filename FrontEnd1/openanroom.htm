@@ -83,7 +83,7 @@
         #card {
             display: block;
             width: 80%;
-            height: 400px;
+            height: 700px;
             text-align: center;
             justify-content: center;
             color: white;
@@ -92,6 +92,34 @@
             background-color: rgb(24, 23, 23);
             padding: 30px 70px;
             border-radius: 10px;
+        }
+        
+        .leavequietly button {
+            border-radius: 20px;
+            background-color: rgb(87, 87, 87);
+            padding: 5px 8px;
+            color: aliceblue;
+            position: inherit;
+        }
+        
+        .handraised {
+            margin-left: 60%;
+            position: inherit;
+        }
+        
+        #card img {
+            width: 65px;
+            height: 60px;
+            border-radius: 50%;
+            margin-left: 20px;
+            float: left;
+            margin-top: 10px;
+        }
+        
+        #card .otherinroom {
+            margin-top: 150px;
+            text-align: left;
+            margin-left: 0px;
         }
     </style>
 </head>
@@ -106,32 +134,46 @@
 
     <section class="left">
         <div>
-            <h3 style="color: white;"><a href="allrooms.htm"><span><i class="fas fa-arrow-left" style="color: white;"></i></span></a> All Voice Rooms</h3>
-        </div>
-        <div>
-            <section class="left">
-                Artificial intelligence is the future?
-                <img src="../profile1.png" alt="">
-                <img src="../Images/profile2.png" alt="">
-                <img src="" alt="">
-            </section>
+            <h3 style="color: white;  margin-left: 70px;"><a href="allrooms.htm"><span><i class="fas fa-arrow-left" style="color: white;"></i></span></a> All Voice Rooms</h3>
         </div>
     </section>
     <card id="card">
-        <h3><span><i class="fas fa-lock"></i></span>Enter the code we just texted you</h3>
-        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
-            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
-            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-            <span class="splitter">&ndash;</span>
-            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
-            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+        <h3 style="text-align: left; margin-left: 2px;">Artificial intelligence is the future? <span class="handraised" style="border: 1px solid black; border-radius: 50px;"><a href="#">✋</a></span> <span class="leavequietly"><button class="leavequietly">✌️ Leave quietly</button></span> </h3>
+        <img style="border: 3px solid blue;" src="../profile1.png">
+        <img style="border: 3px solid yellow;" src="../profile.png">
+        <img style="border: 3px solid blueviolet;" src="../profile1.png">
+        <div>
+            <h3 class="otherinroom">Other in the room</h3>
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
 
-        </form>
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
+            <img style="border: 3px solid blue;" src="../profile1.png">
+            <img style="border: 3px solid yellow;" src="../profile.png">
+            <img style="border: 3px solid blueviolet;" src="../profile1.png">
 
-        <a href="#">Didn't receive? Tap to resend </a>
-        <button onclick="window.location.href='entername.htm'">Next -></button>
+        </div>
 
     </card>
+
 </body>
 
 </html>
