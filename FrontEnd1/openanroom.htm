@@ -70,14 +70,28 @@
             margin-left: 2px;
             border-radius: 5px;
         }
-
-        span{
+        
+        span {
             margin-right: 10px;
         }
         
         .right {
             float: right;
             margin-right: 50px;
+        }
+        
+        #card {
+            display: block;
+            width: 1200px;
+            height: 400px;
+            text-align: center;
+            justify-content: center;
+            color: white;
+            margin: auto auto;
+            margin-top: 50px;
+            background-color: rgb(24, 23, 23);
+            padding: 30px 70px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -92,7 +106,7 @@
 
     <section class="left">
         <div>
-        <h3 style="color: white;"><span><i class="fas fa-arrow-left" style="color: white;"></i></span> All Voice Rooms</h3>
+            <h3 style="color: white;"><span><i class="fas fa-arrow-left" style="color: white;"></i></span> All Voice Rooms</h3>
         </div>
         <div>
             <section class="left">
@@ -103,8 +117,21 @@
             </section>
         </div>
     </section>
-    
+    <card id="card">
+        <h3><span><i class="fas fa-lock"></i></span>Enter the code we just texted you</h3>
+        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+            <span class="splitter">&ndash;</span>
+            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
 
+        </form>
+
+        <a href="#">Didn't receive? Tap to resend </a>
+        <button onclick="window.location.href='entername.htm'">Next -></button>
+
+    </card>
 </body>
 
 </html>

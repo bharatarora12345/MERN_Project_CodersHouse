@@ -127,6 +127,10 @@
             background-repeat: no-repeat;
             background-position: center center;
         }
+        
+        form {
+            display: flex;
+        }
     </style>
 </head>
 
@@ -139,14 +143,21 @@
             <input type="text" name="topic" class="q">
         </form>
         <h3>Room type</h3>
-        <div>
+        <!-- <div>
             <a href="https://www.google.co.in/"><img src="../Images/planet-earth.png">public</a>
             <a href="https://www.google.co.in/"><img src="../Images/group.png">social</a>
             <a href="https://www.google.co.in/"><img src="../Images/lock.png">private</a>
-        </div>
+        </div> -->
 
-
-        <button onclick="window.location.href="><span><i class="fas fa-glass-cheers"></i></span> Let's Go</button>
+        <form action="/action_page.php" method="get">
+            <!-- <input type="radio" name="room" value="public"> -->
+            <a href="#"><label for="public"><img src="../Images/planet-earth.png">public</label></a>
+            <!-- <input type="radio" name="room" value="social"> -->
+            <a href="#"><label for="social"><img src="../Images/group.png">social</label></a>
+            <!-- <input type="radio" name="room" value="private"> -->
+            <a href="#"><label for="private"><img src="../Images/lock.png">private</label></a>
+        </form>
+        <button onclick="window.location.href='mycreatedroom.htm'"><span><i class="fas fa-glass-cheers"></i></span> Let's Go</button>
     </card>
 </body>
 
