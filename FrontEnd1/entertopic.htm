@@ -134,6 +134,11 @@
         form {
             display: flex;
         }
+        
+        label p {
+            margin-left: 20px;
+            margin-top: 0;
+        }
     </style>
 </head>
 
@@ -154,11 +159,11 @@
 
         <form action="/action_page.php" method="get">
             <!-- <input type="radio" name="room" value="public"> -->
-            <a href="#"><label for="public"><img src="../Images/planet-earth.png">public</label></a>
+            <a href="#"><label for="public"><img src="../Images/planet-earth.png"><p>public</p></label></a>
             <!-- <input type="radio" name="room" value="social"> -->
-            <a href="#"><label for="social"><img src="../Images/group.png">social</label></a>
+            <a href="#"><label for="social"><img src="../Images/group.png"><p>social</p></label></a>
             <!-- <input type="radio" name="room" value="private"> -->
-            <a href="#"><label for="private"><img src="../Images/lock.png">private</label></a>
+            <a href="#"><label for="private"><img src="../Images/lock.png"><p>private</p></label></a>
         </form>
         <button onclick="window.location.href='mycreatedroom.htm'"><span><i class="fas fa-glass-cheers"></i></span> Let's Go</button>
     </card>
