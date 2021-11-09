@@ -39,21 +39,21 @@
         }
         
         img {
-            width: 30px;
-            height: 28px;
+            width: 40px;
+            height: 38px;
+            margin-left: 30px;
         }
         
         button {
             margin-top: 30px;
-            border-radius: 10px;
+            border-radius: 25px;
             padding: 5px 40px;
             color: white;
             background-color: blue;
         }
         
-        p {
-            color: white;
-            font-size: 15px;
+        h3,
+        h4 {
             text-align: left;
         }
         
@@ -61,8 +61,8 @@
             color: black;
             font-size: large;
         }
-
-        div i{
+        
+        div i {
             margin-right: 20px;
             color: antiquewhite;
         }
@@ -70,15 +70,14 @@
         #ga {
             font-size: 50px;
         }
-
+        
         #ba {
             font-size: 50px;
         }
-
+        
         #ca {
             font-size: 50px;
         }
-
         
         div button {
             background-color: aliceblue;
@@ -90,6 +89,17 @@
         div button:hover {
             background-color: blue;
         }
+        
+        input {
+            border-radius: 8px;
+            width: 250px;
+            background-color: grey;
+        }
+        
+        a {
+            color: #fff;
+            display: inline-flex;
+        }
     </style>
 </head>
 
@@ -97,18 +107,20 @@
 
     <h2><img src="../hello.png">CodersHouse</h2>
     <card id="card">
-        <p>Enter the topic to be discussed</p>
+        <h4>Enter the topic to be discussed</h4>
         <form action="">
             <label for="topic"></label>
             <input type="text" name="topic" class="q">
         </form>
-        <p>Room type</p>
+        <h3>Room type</h3>
         <div>
-            <i class="fas fa-globe-americas" id="ga"></i>
-            <i class="fas fa-users" id="ba"></i>
-            <i class="fas fa-user-lock" id="ca"></i>
+            <a href="https://www.google.co.in/"><img src="../Images/planet-earth.png">public</a>
+            <a href="https://www.google.co.in/"><img src="../Images/group.png">social</a>
+            <a href="https://www.google.co.in/"><img src="../Images/lock.png">private</a>
         </div>
-        <button onclick="window.location.href='enterotp.htm'"><span><i class="fas fa-glass-cheers"></i></span> Let's Go</button>
+
+
+        <button onclick="window.location.href="><span><i class="fas fa-glass-cheers"></i></span> Let's Go</button>
     </card>
 </body>
 
