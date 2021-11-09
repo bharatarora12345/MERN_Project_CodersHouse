@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coders House</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h2 {
+            margin-left: 20px;
+            color: white;
+        }
+        
+        #card {
+            display: block;
+            width: 250px;
+            text-align: center;
+            justify-content: center;
+            color: white;
+            margin: auto auto;
+            margin-top: 150px;
+            background-color: rgb(24, 23, 23);
+            padding: 30px 70px;
+            border-radius: 10px;
+        }
+        
+        span {
+            margin-right: 10px;
+            background-color: aliceblue;
+            padding: 4px;
+            border-radius: 10px;
+        }
+        
+        img {
+            width: 30px;
+            height: 28px;
+        }
+        
+        button {
+            margin-top: 30px;
+            border-radius: 10px;
+            padding: 5px 40px;
+            color: white;
+            background-color: blue;
+        }
+        
+        p {
+            color: white;
+            font-size: 15px;
+            text-align: left;
+        }
+        
+        i {
+            color: black;
+            font-size: large;
+        }
+
+        div i{
+            margin-right: 20px;
+            color: antiquewhite;
+        }
+        
+        #ga {
+            font-size: 50px;
+        }
+
+        #ba {
+            font-size: 50px;
+        }
+
+        #ca {
+            font-size: 50px;
+        }
+
+        
+        div button {
+            background-color: aliceblue;
+            padding: 5px 15px;
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+        
+        div button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2><img src="../hello.png">CodersHouse</h2>
+    <card id="card">
+        <p>Enter the topic to be discussed</p>
+        <form action="">
+            <label for="topic"></label>
+            <input type="text" name="topic" class="q">
+        </form>
+        <p>Room type</p>
+        <div>
+            <i class="fas fa-globe-americas" id="ga"></i>
+            <i class="fas fa-users" id="ba"></i>
+            <i class="fas fa-user-lock" id="ca"></i>
+        </div>
+        <button onclick="window.location.href='enterotp.htm'"><span><i class="fas fa-glass-cheers"></i></span> Let's Go</button>
+    </card>
+</body>
+
+</html>
