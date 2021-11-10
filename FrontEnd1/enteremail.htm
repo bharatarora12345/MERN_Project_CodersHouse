@@ -83,14 +83,27 @@
             <button onclick="window.location.href='enteremail.htm'"><i class="fa fa-envelope" aria-hidden="true"></i></button>
         </div>
         <h3><span><i class="fa fa-envelope"></i></span>Enter your email id</h3>
-        <form action="">
-            <input type="email">
+        <form action="" name="myForm">
+            <input type="email" name="fname">
         </form>
-        <button onclick="window.location.href='enterotp.htm'">Next -></button>
+        <button onclick="myFunction() ">Next -></button>
         <p>
             By entering your number, you're agreeing to our Terms of Service an Privacy Policy. Thanks!
         </p>
     </card>
+    <script>
+        function myFunction() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == " ") {
+                alert("Name must be filled out ");
+                return false;
+            } else {
+                alert("An otp is sent!");
+                window.location.href = 'enterotp.htm'
+            }
+
+        }
+    </script>
 </body>
 
 </html>
