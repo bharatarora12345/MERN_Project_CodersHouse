@@ -90,10 +90,17 @@
 
         </form>
 
-        <a href="#">Didn't receive? Tap to resend </a>
+        <a href="#" onclick="myFunction()">Didn't receive? Tap to resend </a>
         <button onclick="window.location.href='entername.htm'">Next -></button>
 
     </card>
+
+    <script>
+        function myFunction() {
+            alert("Otp has been sent again!");
+            // window.location.href = 'enterotp.htm';
+        }
+    </script>
 </body>
 
 </html>
